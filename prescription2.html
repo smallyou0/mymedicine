@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이메디슨</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-white">
+    <header class="header-sub block">
+      <div class="align triple border-bottom">
+        <a class="btn-back" href="javascript:window.history.back();"></a>
+        <div>
+          <h2 class="txt-center">처방 상세</h2>
+          <div class="txt-center pt8 text-type4 gray66 fw300 fz11">2024.05.20 - 2024.06.29</div>
+        </div>
+        <div class="w-24"></div>
+      </div>
+    </header>
+    <main class="main pb150">
+      <section class="content">
+        <div class="text-type4 px16 mt34">처방받은 약 <span class="blue">3</span></div>
+        <ul class="px16 pt13" onclick="alert('준비중입니다')">
+          <li class="card-line line-gray img-wrap2 radius5">
+            <img src="images/@img_medicine_card6.png" alt="">
+          </li>
+          <li class="card-line line-gray img-wrap2 radius5 mt10">
+            <img src="images/@img_medicine_card7.png" alt="">
+          </li>
+          <li class="card-line line-gray img-wrap2 radius5 mt10">
+            <img src="images/@img_medicine_card8.png" alt="">
+          </li>
+        </ul>
+        <div class="px16 pt24 align both vm">
+          <button class="btn-main-on w100" type="button" onclick="alert('준비중입니다')">처방 추가</button>
+          <button class="btn-main-empty w100 ml10" type="button" onclick="alert('준비중입니다')">처방 수정</button>
+        </div>
+      </section>
+      <div class="nav-foot">
+        <nav class="nav-foot__cont"> 
+          <ul>
+            <li class="ico-nav1 active"><a href="prescription.html">처방 관리</a></li>
+            <li class="ico-nav2"><a href="dosage.html">투약 관리</a></li>
+            <li class="ico-nav3"><a href="home.html">홈</a></li>
+            <li class="ico-nav4"><a href="reference1.html">자료실</a></li>
+            <li class="ico-nav5"><a href="#none" onclick="alert('준비중입니다')">상담</a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+  </body>
+  <script src="js/button.js"></script>
+  <script src="js/navFoot.js"></script>
+</html>

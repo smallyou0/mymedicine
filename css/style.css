@@ -358,7 +358,8 @@ legend,
   --grayf4: #f4f4f4;
   --grayf8: #f8f8f8;
   --white: #ffffff;
-  --blue3d: #3D79A6
+  --blue3d: #3D79A6;
+  --graydd: #dddddd;
 }
 .mx-auto {
   margin: 0 auto;
@@ -502,11 +503,17 @@ legend,
 .ml8 {
   margin-left: .8rem;
 }
+.ml10 {
+  margin-left: 1rem;
+}
 .ml12 {
   margin-left: 1.2rem;
 }
 .ml32 {
   margin-left: 3.2rem;
+}
+.mr4 {
+  margin-right: .4rem;
 }
 .mr8 {
   margin-right: .8rem;
@@ -575,6 +582,9 @@ legend,
 }
 .pt12 {
   padding-top: 1.2rem;
+}
+.pt13 {
+  padding-top: 1.3rem;
 }
 .pt14 {
   padding-top: 1.4rem;
@@ -740,6 +750,9 @@ legend,
 .fz16 { 
   font-size: 1.6rem;
 }
+.w-24 {
+  width: 24px;
+}
 .w50 {
   width: 50%;
 }
@@ -758,6 +771,9 @@ legend,
 }
 .bg-f8 {
   background: var(--grayf8) !important;
+}
+.bg-f9 {
+  background: #f9f9f9;
 }
 .bg-b4 {
   background: var(--grayb4);
@@ -899,7 +915,7 @@ legend,
   left: 50%;
   transform: translateX(-50%);
   padding: 4rem 1.8rem .9rem 1.8rem;
-  background: var(--white);
+  background: var(--grayf8);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -930,7 +946,7 @@ legend,
 
 /* 메인 */
 .main {
-  padding-top: 9.4rem;
+  padding-top: 7.4rem;
 }
 .main {
   &.pt20 {
@@ -1401,12 +1417,13 @@ button {
   border-radius: 1.0rem;
 }
 .btn-main-empty {
+  height: 56px;
   padding: 1.4rem 2.0rem;
   background: var(--white);
-  color: #666;
-  border: .1rem solid #666;
+  color: #000;
+  border: .1rem solid var(--graycf);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 1.0rem;
   &.border2 {
     border: .2rem solid var(--navy1d);
@@ -1980,6 +1997,9 @@ button {
   &.grayaa {
     color: #aaa;
   }
+  &.gray66 {
+    color: #666;
+  }
   &.center {
     text-align: center;
   }
@@ -2003,6 +2023,9 @@ button {
   }
   &.fz20 {
     font-size: 2rem;
+  }
+  &.fw300 {
+    font-weight: 300;
   }
   &.fw400 {
     font-weight: 400;
@@ -4558,24 +4581,20 @@ body.popup-open::before {
     &.ratio2 {
       aspect-ratio: 0;
     }
-    &.btn-area {
-      background: var(--grayde);
+    & .btn-area {
+      min-width: 100px;
+      background: var(--grayf2);
+      border-radius: 10px;
       padding: 16px;
-      & .text-type4 {
-        color: var(--green1c);
-        line-height: 155%;
-      }
+      color: ;
       & i {
         font-weight: 700;
         border-bottom: 2px solid var(--navy43);
         
       }
       &.active {
-        background: var(--white);
-        border: 1px solid var(--navy1d);
-        & .text-type4 {
-          color: var(--navy1d);
-        }
+        background: var(--blue3d);
+        color: var(--white);
       }
       &.gray {
         background: #F2F2F2;
@@ -4959,6 +4978,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .card-line {
   border: 1px solid var(--blue3d);
   padding: 12px;
+  &.line-gray {
+    border: 1px solid var(--graydd);
+  }
   & .badge {
     min-width: 64px;
     min-height: 26px;
@@ -4967,6 +4989,18 @@ input[type="number"]::-webkit-inner-spin-button {
     }
   }
 
+}
+.card-wide {
+  padding: 32px 20px;
+  &.blue1 {
+    background: rgba(61, 121, 166, 0.40);
+  }
+  &.blue2 {
+    background: rgba(61, 121, 166, 0.70);
+  }
+  &.blue3 {
+    background: var(--main, #3D79A6);
+  }
 }
 .radius5 {
   border-radius: 5px;
@@ -5007,15 +5041,17 @@ input[type="number"]::-webkit-inner-spin-button {
 .vehicle-management {
   position: relative;
   & .select {
-    color: var(--navy22);
-    font-size: 2.8rem;
+    color: var(--black);
+    font-size: 2rem;
     font-weight: 700;
     line-height: 160%;
+    font-family: Pretendard;
     &.ico1 {
       &::after {
         content: "";
         position: absolute;
-        top: -2px;
+        top: 50%;
+        transform: translateY(-50%);
         right: -29px;
         width: 25px;
         height: 25px;
@@ -5024,21 +5060,24 @@ input[type="number"]::-webkit-inner-spin-button {
     }
   }
   & .link {
-    color: var(--navy22);
+    color: var(--gray97);
     font-size: 12px;
-    font-weight: 600;
-    text-decoration: none;
+    font-weight: 400;
+    text-decoration: underline;
   }
 }
 
 .link {
   display: block;
-  color: var(--navy22);
+  color: var(--gray97);
   font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: 400;
+  text-decoration: underline;
   &.gray {
     color: var(--grayc7);
+  }
+  &.deco-none {
+    text-decoration: none;  
   }
 }
 .select-wrap {
@@ -5051,7 +5090,7 @@ input[type="number"]::-webkit-inner-spin-button {
       background:  url(../images/ico_select_down.svg) no-repeat;
       position: absolute;
       top: 50%;
-      right: 14px;
+      right: -24px;
       transform: translateY(-50%);
     }
   }

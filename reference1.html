@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이메디슨</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-white">
+    <header class="header">
+      <div class="align triple">
+        <a href="#none" onclick="alert('준비중입니다')"><img src="images/ico_profile.svg" alt=""></a>
+        <!-- <h1 class="h1"><a class="logo" href="#none"></a></h1> -->
+        <div class="header__alarm">
+          <a class="btn-alarm" href="#none" onclick="alert('준비중입니다')"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main pb150">
+      <section class="content">
+        <div class="text-type4 fz13 px16 pt26 fw400 bg-white">자료실</div>
+        <div class="vehicle-management align both vm px16 bg-white pb30">
+          <div class="select-wrap ico1">
+            <select class="select" onchange="if(this.value) location.href=(this.value);">
+              <option value="reference1.html">의약품DB</option>
+              <option value="reference2.html">건강 정보</option>
+            </select>
+          </div>
+        </div>
+        <ul class="px16">
+          <li class="card-wide blue1 radius-10">
+            <div class="text-type4 white">정보 입력하여 검색하기</div>
+            <div class="text-type4 fz12 fw400 white pt12">약 이름 또는 성분 등으로 검색해보세요.</div>
+          </li>
+          <li class="card-wide blue2 radius-10 mt16">
+            <div class="text-type4 white">처방전 사진으로 검색하기</div>
+            <div class="text-type4 fz12 fw400 white pt12">약 봉투나 처방전 사진을 찍어 검색햅소ㅔ요.</div>
+          </li>
+          <li class="card-wide blue3 radius-10 mt16">
+            <div class="text-type4 white">관련 증상으로 검색하기</div>
+            <div class="text-type4 fz12 fw400 white pt12">아픈 곳과 증상을 입력하여 검색해보세요.</div>
+          </li>
+        </ul>
+      </section>
+      <div class="nav-foot">
+        <nav class="nav-foot__cont"> 
+          <ul>
+            <li class="ico-nav1"><a href="prescription.html">처방 관리</a></li>
+            <li class="ico-nav2"><a href="dosage.html">투약 관리</a></li>
+            <li class="ico-nav3"><a href="home.html">홈</a></li>
+            <li class="ico-nav4 active"><a href="reference1.html">자료실</a></li>
+            <li class="ico-nav5"><a href="#none" onclick="alert('준비중입니다')">상담</a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+  </body>
+  <script src="js/button.js"></script>
+  <script src="js/navFoot.js"></script>
+</html>
