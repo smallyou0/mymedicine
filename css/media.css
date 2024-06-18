@@ -24,7 +24,10 @@
   }
   .useful-info-list__link .logo img { width: 60%; }
 }
-@media (max-width: 300px) {
+@media (max-width: 320px) {
+  html {
+    /* font-size: 45%; */
+  }
   .login-button {
     grid-template-columns: 1fr 1fr;
     white-space: nowrap;
@@ -62,9 +65,8 @@
   .nav-foot__cont ul li.ico-chat {
     background: url("../images/ico_chat.svg") no-repeat center 0 / 20px;
   }
-  .notification {
-    &.center {
-      /* justify-content: left; */
-    }
+  .tab-type2 a {
+    /* font-size: 1.5rem; */
+    white-space: nowrap;
   }
 }
