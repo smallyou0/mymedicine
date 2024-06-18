@@ -1417,7 +1417,7 @@ button {
   border-radius: 1.0rem;
 }
 .btn-main-empty {
-  height: 56px;
+  height: 5.6rem;
   padding: 1.4rem 2.0rem;
   background: var(--white);
   color: #000;
@@ -1771,38 +1771,38 @@ button {
   align-items: center;
 }
 .nav-foot__cont ul li.ico-nav1 {
-  background: url("../images/ico_prescription.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_prescription.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav1.active a {
-  background: url("../images/ico_prescription_active.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_prescription_active.svg") no-repeat center 0 / 2.4rem;
   color: var(--blue3d);
 }
 .nav-foot__cont ul li.ico-nav2 {
-  background: url("../images/ico_dosage.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_dosage.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav2.active a {
-  background: url("../images/ico_dosage_active.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_dosage_active.svg") no-repeat center 0 / 2.4rem;
   color: var(--blue3d);
 }
 .nav-foot__cont ul li.ico-nav3 {
-  background: url("../images/ico_home.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_home.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav3.active a {
-  background: url("../images/ico_home_active.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_home_active.svg") no-repeat center 0 / 2.4rem;
   color: var(--blue3d);
 }
 .nav-foot__cont ul li.ico-nav4 {
-  background: url("../images/ico_reference.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_reference.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav4.active a {
-  background: url("../images/ico_reference_active.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_reference_active.svg") no-repeat center 0 / 2.4rem;
   color: var(--blue3d);
 }
 .nav-foot__cont ul li.ico-nav5 {
-  background: url("../images/ico_consulting.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_consulting.svg") no-repeat center 0 / 2.4rem;
 }
 .nav-foot__cont ul li.ico-nav5.active a {
-  background: url("../images/ico_consulting_active.svg") no-repeat center 0 / 24px;
+  background: url("../images/ico_consulting_active.svg") no-repeat center 0 / 2.4rem;
   color: var(--blue3d);
 }
 
